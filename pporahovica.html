@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" sizes="32x32" href="Image/favicon-32x32.png">
+    <title>PPOrahovica</title>
+    <style>
+        @font-face {
+            font-family: "Varela Round";
+            src: url(Varela_Round/VarelaRound-Regular.ttf);
+        }
+
+        body {
+            margin: 0;
+            padding-top: 90px;
+            font-family: "Varela Round";
+        }
+
+        header {
+            top: 0;
+            height: 90px;
+            position: fixed;
+            width: 100%;
+            background-color: white;
+            z-index: 9;
+            border: 1px solid whitesmoke;
+        }
+        .logo {
+            float: left;
+            width: 220px;
+            height: 70px;
+            padding-left: 2em;  
+        }
+
+        .list1 {
+            list-style-type: none;
+        }
+
+        .list1 li {
+            display: inline-block;
+            float: right;
+            text-align: right;
+            padding-right: 2em;
+            padding-top: 1.7em;
+        }
+
+        .onama a {
+            letter-spacing: 1pc;
+            text-decoration: underline;
+            text-transform: uppercase;
+            font-family:Verdana, Geneva, Tahoma, sans-serif;
+            font-size: large;
+            color: goldenrod;
+        }
+
+        .container {
+            margin: 0px auto;
+            width: 100%;
+            height: 95vh;
+            position: absolute;
+        }
+
+        .first_column {
+            position: relative;
+            float: left;
+            width: 48%;
+            height: 850px;
+            background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0,.8)), url(Image/cover.jpg) center center no-repeat;
+            background-size: cover;
+            color: white;
+            font-size: 1.5em;
+            padding-top: 1em;
+            padding-right: 0.5em;
+            position: fixed;
+            left: 0;
+        }
+
+        .naslov {
+            margin-left: 2em;
+        
+        } 
+        .list2 li {
+            list-style-type: none;
+            padding-left: 1.5em;
+            padding-right: 0.7em;
+            background-image: url(Image/white-checkmark-png-4.png);
+            background-size: 1.1em;
+            background-repeat: no-repeat;
+        }
+
+        .second_column {
+            position: relative;
+            float: right;
+            height: 95vh;
+            width: 48%;
+        }
+
+        .naslov2 {
+            padding: 0.5em;
+            width: 720px;
+            height: 70px;
+            font-size: 1.3em;
+            margin-bottom: 1.7em;   
+        }
+
+        .kontakt a{
+            width: 660px;
+            height: 120px;
+            font-size: 2em;
+            font-weight: bold;
+            color: goldenrod;
+            background-color: white;
+            box-shadow: 0 10px 30px rgb(14 72 119 / 20%);
+            border-radius: 0.15em;
+            text-decoration: none; 
+            align-items: center;
+            justify-content: center;
+            display: flex;
+            padding-left: 0.2em;
+        }
+
+        .f1, .f2, .f3, .f4 {
+            font-size: 1em;
+            margin-bottom: 10px;
+            font-family: 'Varela Round'; 
+        }  
+
+        .div_forma {
+           display: flex;
+           justify-content: space-around;
+    
+        }
+
+        .f1, .f2 {
+            width: 49%;  
+        }
+
+        .f1 {
+            padding-right: 1em;
+        }
+
+        .f5 {
+            padding-bottom: 2em;
+        }
+
+        .div_container {
+            position: absolute;
+            width: 670px;
+            height: 400px;
+            top: 18em;
+            font-weight: bold;
+            font-size: 15px;    
+        }
+
+        textarea {
+            width: 100%;
+            display: block;
+            border: 0.7em;
+            box-shadow: 0 10px 30px rgb(14 72 119 / 45%);
+            border: 1px solid lightcyan;
+            border-radius: 0.5em;
+            font-size: 1.1em;
+            font-family:"Varela Round";
+        }
+
+        .ime, .broj, .email {
+            width: 100%;
+            border: 0.7em;
+            box-shadow: 0 10px 30px rgb(14 72 119 / 45%);
+            border: 1px solid lightcyan;
+            height: 45px;
+            border-radius: 0.5em;
+            font-size: 1.1em;             
+        }
+
+        .upit{
+            background-color: goldenrod;
+            text-decoration: none;
+            border-radius: 0.3em;
+            color: white;
+            font-size: 20px;
+            padding: 0.5em;
+            border: gold;
+            letter-spacing: 0.1em;
+            font-family: "Varela Round";
+        }
+
+        .posjetiweb {
+            color: goldenrod;
+            font-size: 20px;
+            box-sizing: border-box;
+            float: right;
+            letter-spacing: 0.1em;
+            padding: 0;
+        }
+ 
+    </style>
+</head>
+<body>
+    <header>
+        <div>
+            <img class="logo" src="https://pporahovica.hr/wp-content/uploads/2020/05/Logo-gold.png" alt="pporahovica"> 
+        <ul class="list1">
+            <li><a href="https://www.instagram.com/pp____orahovica/" target="_blank"><img class="insta" width="20" height="20" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSGdnsv8w865H06JoHji85uoKZ1j_tR5OH9-A4JljB_kBG3Qc6AAP10tYAIfVG8w1sOGbg&usqp=CAU" alt=""></a></li>
+            <li><a href="https://www.facebook.com/pporahovica/" target="_blank"><img class="face" width="20" height="20"src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR42e87EZd4jg7j2CwptLIsdyww5FVK1OYa4A&usqp=CAU" alt=""></a></li>
+            <li class="onama"><a href="https://pporahovica.hr/o-nama/">O nama</a></li>
+        </ul>     
+        </div>
+    </header>
+    <section class="sec1">
+        <div class="first_column">
+            <div class="naslov"><h1>Objavljujemo totalnu rasprodaju nekorištenih rezervnih dijelova:</h1></div><br>
+                <ul class="list2">  
+                    <li>Ležajevi, semerinzi, vijčana roba, kardani, remenje i filteri</li><br>
+                    <li>Renomirani proizvođači rezervnih dijelova</li><br>
+                    <li>Izvrsno stanje</li><br>
+                    <li>Povoljna cijena</li><br>
+                    <li>Dijelovi se mogu pogledati svakim radnim danom od 8 do 14 sati na adresi Pustara 1,33 513 Zdenci</li>
+                </ul>
+            </div>
+        <div class="second_column">
+            <div class="naslov2">
+                <h1>TOTALNA RASPRODAJA NEKORIŠTENIH <br> REZERVNIH DIJELOVA I MEHANIZACIJE</h1>
+            </div>
+            <div class="kontakt">
+                <a href="https://pporahovica.hr/kontakt/">NAZOVITE NAS NA BROJ 091/43 666 09 ILI POŠALJITE UPIT:</a>
+            </div>
+                <form action="./HvalaVam.html" method="post" class="forma">
+                    <div class="div_container">
+                        <div class="div_forma">
+                        <div class="f1">
+                            <label for="">VAŠE IME I PREZIME<span style="color: red;">*</span></label><br><br>
+                            <input type="text" value="" class="ime" required placeholder="Unesite svoje ime"><br><br>
+                        </div>
+                        <div class="f2">
+                            <label for="">BROJ TELEFONA<span style="color: red;">*</span></label><br><br>
+                            <input type="number" value="" class="broj" required placeholder="Unesite broj telefona"><br><br>
+                        </div>
+                        </div>
+                        <div class="f3">
+                            <label for="">EMAIL ADRESA<span style="color: red;">*</span></label><br><br>
+                            <input type="email" value="" class="email" required placeholder="Unesite Email"><br><br>
+                        </div>  
+                        <div class="f4"> 
+                            <label for="textarea"><strong>KONTAKTIRAJTE NAS</strong></label><br><br>
+                            <textarea name="Unesite poruku"class="textarea" cols="50" rows="4" placeholder="Unesite poruku"></textarea> <br><br>
+                        </div> 
+                        <div class="f5">
+                            <input type="checkbox">SLAŽEM SE
+                            <p>Korištenjem ovog obrasca prihvaćate prikupljanje i obradu osobnih podataka danih u obrascu
+                            bez kojih vaš zahtjev ne može biti ispunjen.</p><br><br>
+                            <button class="upit" type="submit">Pošalji upit</button>
+                            <a class="posjetiweb" href="https://pporahovica.hr/">Posjeti naš Web</a>
+                        </div>
+                    </div>
+                </form>  
+            </div>
+    </section> 
+</body>
+</html>
